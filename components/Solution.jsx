@@ -67,6 +67,13 @@ export default function Solution() {
               </div>
             </div>
           </div>
+          <div className="text-center text-text-primary text-sm md:text-base max-w-md mt-2">
+            <span className="italic">
+              Whether you’re running a SaaS product, an eCommerce brand, or a service business, we mold the support system around your customers and your operations — not the other way around.
+            </span>
+            <br />
+            <span className="font-bold">Your business is unique. Your support should be too.</span>
+          </div>
         </div>
         {/* <div className="flex flex-col  w-full">
           <div className="flex-row grid gird-cols-3 items-start w-full">
@@ -81,14 +88,9 @@ export default function Solution() {
               className="rounded-2xl shadow-xl w-full h-full col-span-2 mb-6"
             />
           </div>
-          <div className="text-center text-text-primary text-sm md:text-base max-w-md mt-2">
-            <span className="italic">
-              Whether you’re running a SaaS product, an eCommerce brand, or a service business, we mold the support system around your customers and your operations — not the other way around.
-            </span>
-            <br />
-            <span className="font-bold">Your business is unique. Your support should be too.</span>
-          </div>
+        
         </div> */}
+
       </Container>
     </section>
   );
