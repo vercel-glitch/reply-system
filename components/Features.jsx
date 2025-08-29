@@ -73,7 +73,8 @@ const cards = [
 
 export default function Features() {
   return (
-    <section className="bg-white py-16 px-4 flex flex-col items-center">
+    <section className="bg-white py-16 flex flex-col items-center">
+   
       <Container className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {cards.map((card, idx) => (
           <div

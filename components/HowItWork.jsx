@@ -40,18 +40,18 @@ const DottedMesh = () => (
 
 export default function HowItWork() {
   return (
-    <section className="bg-white py-24 px-4 flex flex-col items-center">
+    <section className="bg-white py-24 flex flex-col items-center">
       {/* Title & Subtitle */}
       <h2 className="text-5xl font-bold text-center text-text-primary mb-2">How It work</h2>
       <p className="text-center text-secondary text-lg mb-14">We are fully support on Reply System</p>
       {/* Main content grid */}
       <Container className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-start">
         {/* Left: Steps */}
-        <div className="flex flex-col gap-8 bg-primary p-6 rounded-[32px]">
+        <div className="flex flex-col gap-4 lg:gap-8 bg-primary p-6 rounded-[32px]">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="rounded-[32px] px-8 min-h-[120px] flex flex-col py-4 justify-center shadow-sm bg-gradient-to-r from-white via-primary-hover via-30% to-primary-hover"
+              className="rounded-[32px] px-4 lg:px-8 min-h-[120px] flex flex-col py-4 justify-center shadow-sm bg-gradient-to-r from-white via-primary-hover via-30% to-primary-hover"
             >
               <div className="font-bold text-text-primary text-lg mb-1 leading-tight">{step.title}</div>
               <div className="text-text-primary text-base leading-snug opacity-90">{step.desc}</div>

@@ -48,8 +48,6 @@ export default function Hero() {
   return (
     <>
       <section className="relative flex flex-col items-center justify-center min-h-[80vh] lg:min-h-[70vh] geometric-bg pt-20 pb-8 overflow-hidden">
-
-
         {/* Main content */}
         <Container className="flex flex-col items-center z-10 relative">
           {/* Headline */}
@@ -80,7 +78,7 @@ export default function Hero() {
                 onFocus={() => setShowSuggestions(true)}
                 autoComplete="off"
               />
-              <button
+              <button 
                 className="bg-primary text-secondary font-bold px-6 py-3 text-base flex items-center gap-2 hover:bg-primary-hover transition-colors rounded-r-lg"
                 onClick={() => handleSearch(searchQuery)}
                 type="button"
@@ -119,7 +117,7 @@ export default function Hero() {
             </div>
           </div>
           {/* Trustpilot row */}
-          <div className="flex items-center gap-2 my-8 text-gray-200 text-sm font-medium">
+          <div className="flex items-center gap-2 my-4 mb-8 text-gray-200 text-sm font-medium">
             Excellent
             <span className="flex items-center ml-1">
               {/* 5 green stars */}
@@ -140,7 +138,7 @@ export default function Hero() {
         </Container>
       </section>
       {/* Dashboard image below hero */}
-      <div className="w-full flex justify-center -mt-32 z-20 relative">
+    <div className="w-full flex justify-center -mt-32 z-20 relative">
         <Container className=" rounded-2xl  p-2 w-full flex justify-center">
           <Image
             src="/img/d1.png"

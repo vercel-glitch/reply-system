@@ -2,14 +2,16 @@ import React from 'react';
 import Container from './Common/Container'
 export default function Solution() {
   return (
-    <section className="bg-white py-20 mt-24 px-4 flex flex-col items-center">
+    <section className="bg-white lg:py-20 mt-24 flex flex-col items-center">
       {/* Title */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-4">Solution</h2>
-      {/* Subtitle */}
-      <p className="text-center text-text-secondary text-lg md:text-xl mb-12 max-w-2xl">
-        We’re not just another ticketing platform. We’re your <br />
-        <span className="font-bold text-text-secondary">managed customer support partner.</span>
-      </p>
+      <Container>
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-4">Solution</h2>
+        {/* Subtitle */}
+        <p className="text-center text-text-secondary text-lg md:text-xl mb-12 max-w-2xl">
+          We’re not just another ticketing platform. We’re your <br />
+          <span className="font-bold text-text-secondary">managed customer support partner.</span>
+        </p>
+      </Container>
       {/* Main content grid */}
       <Container className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left: Feature list */}

@@ -81,7 +81,7 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="bg-white py-20 px-4 flex flex-col items-center">
+    <div className="bg-white py-8 lg:py-20 flex flex-col items-center">
       <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-2">Testimonal</h2>
       <p className="text-center text-accent-blue text-lg mb-12">See what our happy Clients are sharing about us!</p>
       <Container className="w-full flex items-center justify-center relative">

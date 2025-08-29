@@ -69,7 +69,6 @@ export default function EmployeeSupport() {
           </div>
         </div>
       </Container>
-
       {/* Bottom Section */}
       <Container className='border-t border-gray-200'>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

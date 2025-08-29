@@ -44,9 +44,9 @@ export default function AdditionalResources() {
   ]
 
   return (
-    <section  className="py-16 bg-bg-light">
+    <section  className="py-16 bg-gray-100">
       <Container>
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 lg:mb-12 ">
           <h2 className="text-3xl font-bold text-text-primary mb-4">
             Additional Resources
           </h2>
@@ -59,8 +59,8 @@ export default function AdditionalResources() {
           {data.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="bg-bg-light min-w-[25%] h-full rounded-lg  overflow-hidden  transition-shadow duration-300">
-                <div className='px-5 h-full'>
+              <div key={index} className="bg-bg-light min-w-[200px] lg:min-w-[25%] h-full rounded-lg  overflow-hidden  transition-shadow duration-300">
+                <div className='px-2 lg:px-5 h-full'>
                   <div className="relative h-48 rounded-t-2xl overflow-hidden">
                     <Image
                       src={item.img}
@@ -72,14 +72,14 @@ export default function AdditionalResources() {
                     <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
                     </div>
                   </div>
-                  <div className="p-6 bg-bg-lighter h-full min-h-[150px] rounded-b-2xl">
+                  <div className=" py-4 bg-bg-lighter h-full min-h-[150px] rounded-b-2xl">
                     <div className='flex items-center gap-2 mb-2'>
                       <IconComponent className="w-4 h-4 text-text-secondary" />
                       <span className="text-xs font-medium text-text-muted uppercase tracking-wide">
                         {item.label}
                       </span>
                     </div>
-                    <h3 className="text-base font-semibold text-text-primary mb-2">
+                    <h3 className="text-sm lg:text-base font-semibold text-text-primary mb-2">
                       {item.title}
                     </h3>
                   </div>

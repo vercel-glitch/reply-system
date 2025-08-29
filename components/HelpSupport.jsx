@@ -13,7 +13,7 @@
   export default function HelpSupport() {
     return (
       <>
-        <section className="w-full min-h-screen bg-white flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+        <section className="w-full min-h-screen bg-white flex flex-col items-center justify-center py-8 md:py-12 lg:py-16">
           <Container className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-12 xl:gap-16">
             {/* Left: Form */}
             <div className="flex-1 w-full max-w-lg mx-auto lg:mx-0 text-center lg:text-left">

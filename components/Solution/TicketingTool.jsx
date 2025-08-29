@@ -33,7 +33,7 @@ export default function TicketingTool() {
   ]
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white py-16">
       <Container>
         {/* Header Section */}
         <div className="text-center mb-16">

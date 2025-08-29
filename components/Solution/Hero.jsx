@@ -4,7 +4,7 @@ import Container from "../Common/Container";
 
 export default function SolutionHero() {
   return (
-    <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden mx-3">
+    <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden">
       <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
