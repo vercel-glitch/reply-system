@@ -68,14 +68,14 @@ export default function HowItWork() {
             <button className="bg-primary text-secondary font-bold px-7 py-2 rounded-md shadow-md hover:bg-primary-hover transition-colors">Try It Free →</button>
           </div>
           {/* Mesh SVG and avatars */}
-          <div className=" bottom-0 left-0 w-full flex flex-col items-center my-6  ">
+          <div className="bottom-0 left-0 w-full flex flex-col items-center my-6 bg-red-700">
             <DottedMesh />
             {/* Avatars in semi-circle, absolutely positioned for a true arc */}
-            <div className="relative w-full ">
-              <img src={avatars[0]} alt="User avatar" className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover absolute left-[8%] bottom-0" />
-              <img src={avatars[1]} alt="User avatar" className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover absolute left-[32%] bottom-8" />
-              <img src={avatars[2]} alt="User avatar" className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover absolute left-[58%] bottom-8" />
-              <img src={avatars[3]} alt="User avatar" className="w-20 h-20 rounded-full border-4 border-white shadow-md object-cover absolute left-[82%] bottom-0" />
+            <div className="relative w-full h-16 sm:h-20">
+              <img src={avatars[0]} alt="User avatar" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full border-2 sm:border-4 border-white shadow-md object-cover absolute left-[0%] sm:left-[0%] bottom-0" />
+              <img src={avatars[1]} alt="User avatar" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full border-2 sm:border-4 border-white shadow-md object-cover absolute left-[25%] sm:left-[20%] lg:left-[20%] bottom-4 sm:bottom-6 lg:bottom-8" />
+              <img src={avatars[2]} alt="User avatar" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full border-2 sm:border-4 border-white shadow-md object-cover absolute left-[50%] sm:left-[40%] lg:left-[40%] bottom-4 sm:bottom-6 lg:bottom-8" />
+              <img src={avatars[3]} alt="User avatar" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-full border-2 sm:border-4 border-white shadow-md object-cover absolute left-[60%] sm:left-[60%] lg:left-[60%] bottom-0" />
             </div>
           </div>
         </div>
