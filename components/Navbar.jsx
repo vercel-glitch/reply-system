@@ -27,7 +27,7 @@ export default function Navbar() {
   
   return (
     <>
-      <nav className={`fixed left-1/2 ${isScrolled ? 'top-3' : 'top-6 md:top-8'} -translate-x-1/2 z-50 bg-secondary rounded-2xl shadow-xl max-w-7xl w-[95vw] md:w-[90vw] px-4 md:px-10 py-3 md:py-5 flex flex-col gap-2 transition-all duration-500 ease-in-out`}>
+      <nav className={`fixed left-1/2 ${isScrolled ? 'top-3' : 'top-6 md:top-8'} -translate-x-1/2 z-9999 bg-secondary rounded-2xl shadow-xl max-w-7xl w-[95vw] md:w-[90vw] px-4 md:px-10 py-3 md:py-5 flex flex-col gap-2 transition-all duration-500 ease-in-out`}>
         {/* Main navbar */}
         <div className="flex items-center justify-between w-full">
           {/* Logo and brand */}

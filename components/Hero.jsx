@@ -46,7 +46,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[60vh] geometric-bg pt-20 pb-8 px-4 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[80vh] lg:min-h-[70vh] geometric-bg pt-20 pb-8 px-4 overflow-hidden">
 
         
         {/* Main content */}

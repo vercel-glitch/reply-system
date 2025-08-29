@@ -72,12 +72,12 @@ const cards = [
 
 export default function Features() {
   return (
-    <section className="bg-white py-16 px-4 flex flex-col items-center ">
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 ">
+    <section className="bg-white py-16 px-4 flex flex-col items-center">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-bg-lighter rounded-2xl shadow-lg flex flex-col h-full overflow-hidden border border-bg-lightest p-3 "
+            className="bg-bg-lighter rounded-2xl shadow-lg flex flex-col h-full overflow-hidden border border-gray-300 p-3 "
           >
             {/* Browser-like top bar */}
             <div className="bg-secondary-darker h-7 rounded-t-2xl flex items-center px-4">

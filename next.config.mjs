@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['randomuser.me', 'user-images.githubusercontent.com'],
+    domains: ['randomuser.me', 'user-images.githubusercontent.com', 'images.unsplash.com'],
   },
   experimental: {
     optimizePackageImports: ['lucide-react'],

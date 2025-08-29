@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -44,7 +44,32 @@ const Star = () => (
 
 export default function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [screenSize, setScreenSize] = useState('lg');
   const hasMoreThanFour = testimonials.length > 4;
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      if (window.innerWidth >= 1280) {
+        setScreenSize('xl'); // 4 columns
+      } else if (window.innerWidth >= 1024) {
+        setScreenSize('lg'); // 3 columns  
+      } else {
+        setScreenSize('md'); // 2 columns
+      }
+    };
+
+    updateScreenSize();
+    window.addEventListener('resize', updateScreenSize);
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
+
+  const getVisibleCount = () => {
+    switch(screenSize) {
+      case 'xl': return 4;
+      case 'lg': return 3;
+      default: return 2;
+    }
+  };
   
   const prev = () => {
     setCurrentIndex((c) => (c - 1 + testimonials.length) % testimonials.length);
@@ -63,7 +88,7 @@ export default function Testimonial() {
           <button
             aria-label="Previous testimonial"
             onClick={prev}
-            className="absolute left-0 md:-left-12 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-100 transition-all duration-300 z-10"
+            className="absolute left-2 xl:-left-12 top-1/2 -translate-y-1/2 bg-white/50 border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-100 transition-all duration-300 z-10"
           >
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#232B3A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
@@ -71,8 +96,8 @@ export default function Testimonial() {
         
         {/* Desktop */}
         <div className="w-full hidden md:flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full transition-all duration-500 ease-in-out">
-            {testimonials.slice(currentIndex, currentIndex + 4).map((t, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full transition-all duration-500 ease-in-out">
+            {testimonials.slice(currentIndex, currentIndex + getVisibleCount()).map((t, idx) => (
               <div 
                 key={`${currentIndex}-${idx}`} 
                 className="bg-bg-light rounded-2xl p-8 flex flex-col justify-between h-full min-h-[260px] shadow-sm transition-all duration-500 ease-in-out transform"
@@ -118,7 +143,7 @@ export default function Testimonial() {
           <button
             aria-label="Next testimonial"
             onClick={next}
-            className="absolute right-0 md:-right-12 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-100 transition-all duration-300 z-10"
+            className="absolute right-2 xl:-right-12 top-1/2 -translate-y-1/2 bg-white/50 border border-gray-200 rounded-full w-10 h-10 flex items-center justify-center shadow hover:bg-gray-100 transition-all duration-300 z-10"
           >
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#232B3A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
