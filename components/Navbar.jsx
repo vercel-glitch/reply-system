@@ -91,7 +91,7 @@ export default function Navbar() {
         
         {/* Mobile nav menu */}
         {menuOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-start justify-end md:hidden">
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-start justify-end lg:hidden">
             <div className="bg-white rounded-2xl shadow-2xl mt-20 mr-4 p-6 w-[85vw] max-w-sm flex flex-col gap-4 animate-slide-in">
               {/* Close icon */}
               <button

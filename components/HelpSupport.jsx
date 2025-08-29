@@ -13,7 +13,7 @@ export default function HelpSupport() {
   return (
     <>
       <section className="w-full min-h-screen bg-white flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
-        <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-12 xl:gap-16">
+        <div className="max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 lg:gap-12 xl:gap-16">
           {/* Left: Form */}
           <div className="flex-1 w-full max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary mb-2 md:mb-1 leading-tight">Help support</h2>
@@ -51,7 +51,6 @@ export default function HelpSupport() {
                     priority
                   />
                 </div>
-
                 {/* Second Image - positioned with better spacing */}
                 <div className="absolute z-10 bottom-0 right-0 w-[85%] h-[85%] rounded-xl overflow-hidden shadow-2xl bg-white">
                   <Image
@@ -68,8 +67,8 @@ export default function HelpSupport() {
         </div>
 
         {/* Logos row */}
-        <div className="w-full flex flex-col items-center mt-6 md:mt-8 lg:mt-16 mb-0">
-          <div className="bg-bg-light py-3 px-2 sm:py-4 md:py-5 md:px-8 grid grid-cols-3 sm:grid-cols-5 justify-center bg-gray-100 items-center gap-2 sm:gap-4 md:gap-6 w-full max-w-6xl">
+        <div className="w-full max-w-6xl mx-auto flex flex-col items-center mt-6 md:mt-8 lg:mt-16 mb-0">
+          <div className="bg-bg-light py-3  md:py-5 md:px-8 grid grid-cols-3 sm:grid-cols-5 justify-center bg-gray-100 items-center gap-2 sm:gap-4 md:gap-6 w-full">
             {logos.map((logo, idx) => (
               <div key={idx} className={`flex items-center justify-center w-full h-full max-h-[60px] sm:max-h-[80px] md:max-h-[90px] ${idx >= 3 ? 'hidden sm:flex' : ''}`}>
                 <img src={logo.src} alt={logo.alt} width={150} height={100} className="object-contain grayscale mx-auto max-w-full h-auto" />

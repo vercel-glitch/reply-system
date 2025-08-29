@@ -6,7 +6,7 @@ export default function SolutionHero() {
     <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden mx-3">
    
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">

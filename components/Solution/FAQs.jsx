@@ -55,7 +55,7 @@ export default function FAQs() {
   };
 
   return (
-    <div className="flex max-w-7xl mx-auto py-16 px-5 gap-16">
+    <div className="flex flex-col md:flex-row max-w-6xl mx-auto py-16 px-5 gap-16">
       <div className="flex-1">
         <h1 className="text-5xl font-bold mb-0 leading-tight text-text-primary">
           Frequently asked<br />questions
