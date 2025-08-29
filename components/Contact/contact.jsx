@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { MapPin, MessageCircle, Mail, Users, X, Plus } from 'lucide-react'
+import Container from '../Common/Container'
 
 const contact = () => {
     const [openFaq, setOpenFaq] = useState(0)
@@ -70,14 +71,14 @@ const contact = () => {
     return (
         <div className='bg-white min-h-screen'>
             <div className='bg-gradient-to-br to-primary/20 via-white from-white min-h-[60vh]'>
-                <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-28'>
+                <Container className='flex flex-col justify-between items-center gap-28'>
                     <div className='flex flex-col gap-4 mt-32 py-20'>
                         <h2 className='text-4xl  lg:text-5xl font-bold text-center'>Contact Us</h2>
                         <p className=' text-center max-w-2xl text-secondary'>We're here to help you with any questions or concerns you may have. Please fill out the form below and we'll get back to you as soon as possible.</p>
                     </div>
-                </div>
+                </Container>
             </div>
-            <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-28 mt-20'>
+            <Container className='flex flex-col justify-between items-center gap-28 mt-20'>
                 <div className='w-full h-full min-h-[500px] mt-[-200px]'>
                     <div className='bg-white shadow-lg flex flex-col gap-10 max-w-5xl mx-auto p-16 border-2 border-gray-200 rounded-lg'>
                         <p className='text-center max-w-2xl mx-auto text-secondary/60'>have a question or feedback?Fill out the form below and we'll get back to you as soon as possible.</p>
@@ -95,10 +96,10 @@ const contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
 
             {/* Other ways to reach us section */}
-            <div className='max-w-7xl mx-auto px-4 py-20'>
+            <Container className='py-20'>
                 <h2 className='text-4xl lg:text-5xl font-bold text-center text-black mb-16'>Other ways to reach us</h2>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -122,10 +123,10 @@ const contact = () => {
                         )
                     })}
                 </div>
-            </div>
+            </Container>
 
             {/* FAQ Section */}
-            <div className='max-w-7xl mx-auto px-4 py-20'>
+            <Container className='py-20'>
                 <h2 className='text-4xl lg:text-5xl font-bold text-center text-black mb-16'>Frequently asked questions:</h2>
 
                 <div className='bg-gray-100 rounded-lg p-8 shadow-lg min-h-[600px] max-w-5xl mx-auto'>
@@ -152,7 +153,7 @@ const contact = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }

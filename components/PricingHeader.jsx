@@ -1,10 +1,10 @@
 import React from "react";
-
+import Container from './Common/Container'
 export default function PricingHeader() {
   return (
     <section className="pt-48 pb-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <Container className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left side - Customer Service Suite */}
           <div className="space-y-6">
             <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function PricingHeader() {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

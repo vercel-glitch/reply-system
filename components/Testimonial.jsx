@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Container from './Common/Container'
 
 const testimonials = [
   {
@@ -83,7 +84,7 @@ export default function Testimonial() {
     <div className="bg-white py-20 px-4 flex flex-col items-center">
       <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-2">Testimonal</h2>
       <p className="text-center text-accent-blue text-lg mb-12">See what our happy Clients are sharing about us!</p>
-      <div className="w-full max-w-6xl mx-auto flex items-center justify-center relative">
+      <Container className="w-full flex items-center justify-center relative">
         {hasMoreThanFour && (
           <button
             aria-label="Previous testimonial"
@@ -148,7 +149,7 @@ export default function Testimonial() {
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#232B3A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
         )}
-      </div>
+      </Container>
       
       <style jsx>{`
         @keyframes slideIn {

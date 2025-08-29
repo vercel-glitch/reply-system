@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Container from '../Common/Container'
 
 const faqs = [
   {
@@ -55,7 +56,7 @@ export default function FAQs() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row max-w-6xl mx-auto py-16 px-5 gap-16">
+    <Container   className="flex flex-col md:flex-row max-w-6xl mx-auto py-16 px-5 gap-16">
       <div className="flex-1">
         <h1 className="text-5xl font-bold mb-0 leading-tight text-text-primary">
           Frequently asked<br />questions
@@ -88,6 +89,6 @@ export default function FAQs() {
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
-    </div>
+    </Container>
   );
 }

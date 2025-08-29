@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Container from '../Common/Container'
 
 export default function EmployeeSupport() {
   return (
     <div className="bg-white">
       {/* Top Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div className="space-y-6">
@@ -67,10 +68,10 @@ export default function EmployeeSupport() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* Bottom Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-gray-200">
+      <Container className='border-t border-gray-200'>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Awards Text */}
           <div className="space-y-4">
@@ -84,7 +85,7 @@ export default function EmployeeSupport() {
 
        <Image src="/img/leader.webp" alt="Employee Support" width={600} height={400} className='' />
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

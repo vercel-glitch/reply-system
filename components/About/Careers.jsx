@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Container from "../Common/Container";
 
 export default function Careers() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,8 +51,8 @@ export default function Careers() {
   };
 
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 bg-white">
+      <Container>
         {/* Header Section */}
         <div className="text-center mb-12">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
@@ -118,7 +119,7 @@ export default function Careers() {
             </button>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

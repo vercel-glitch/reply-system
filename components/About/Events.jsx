@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Container from "../Common/Container";
 
 export default function Events() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 bg-white">
+      <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
@@ -32,7 +33,7 @@ export default function Events() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

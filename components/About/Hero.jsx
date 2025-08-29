@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Container from "../Common/Container";
 
 export default function AboutHero() {
   return (
@@ -11,7 +12,7 @@ export default function AboutHero() {
            }}>
       </div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <Container>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
@@ -44,7 +45,7 @@ export default function AboutHero() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

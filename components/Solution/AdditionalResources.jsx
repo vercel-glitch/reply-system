@@ -2,6 +2,7 @@
 import React from 'react'
 import { Play, FileText, BookOpen, MessageSquare, Settings } from 'lucide-react'
 import Image from 'next/image'
+import Container from '../Common/Container'
 
 export default function AdditionalResources() {
   const data = [
@@ -43,8 +44,8 @@ export default function AdditionalResources() {
   ]
 
   return (
-    <section className="py-16 bg-bg-light">
-      <div className="container max-w-6xl mx-auto px-4">
+    <section  className="py-16 bg-bg-light">
+      <Container>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-text-primary mb-4">
             Additional Resources
@@ -54,7 +55,7 @@ export default function AdditionalResources() {
           </p>
         </div>
 
-        <div className="flex  overflow-x-scroll h-full" style={{ scrollbarWidth: 'none' }}>
+        <div className="flex overflow-x-scroll h-full" style={{ scrollbarWidth: 'none' }}>
           {data.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -87,7 +88,7 @@ export default function AdditionalResources() {
             );
           })}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

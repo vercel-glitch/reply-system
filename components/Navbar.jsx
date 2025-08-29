@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,9 +28,9 @@ export default function Navbar() {
     <>
       <nav className={`fixed left-1/2 ${isScrolled ? 'top-3' : 'top-6 md:top-8'} -translate-x-1/2 z-9999 bg-secondary rounded-2xl shadow-xl max-w-7xl w-[95vw] md:w-[90vw] px-4 md:px-10 py-3 md:py-5 flex flex-col gap-2 transition-all duration-500 ease-in-out`}>
         {/* Main navbar */}
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full ">
           {/* Logo and brand */}
-          <Link href="/" className="flex items-center gap-2 md:gap-3">
+          <Link href="/" className="flex items-center gap-2 md:gap-3 z-60">
              <Image
               src="/img/logo.png"
               alt="Logo"
@@ -42,7 +41,7 @@ export default function Navbar() {
           </Link>
           
           {/* Center nav links - hidden on mobile */}
-          <div className="hidden lg:flex gap-8 ml-8">
+          <div className="hidden xl:flex gap-8 ml-8">
             {navLinks.map((item) => (
               <a
                 key={item.name}
@@ -56,7 +55,7 @@ export default function Navbar() {
           </div>
           
           {/* Right buttons - hidden on mobile */}
-          <div className="hidden lg:flex gap-3">
+          <div className="hidden xl:flex gap-3">
             <button className="bg-white text-secondary font-semibold px-5 py-2 rounded-md hover:bg-gray-100 shadow flex items-center gap-2 text-base transition-colors">
               Try It Free <span className=" text-lg">→</span>
             </button>
@@ -67,7 +66,7 @@ export default function Navbar() {
           
           {/* Hamburger for mobile */}
           <button
-            className="lg:hidden flex flex-col justify-center items-center w-8 h-8 ml-2 focus:outline-none"
+            className="xl:hidden flex flex-col justify-center items-center w-8 h-8 ml-2 focus:outline-none"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle navigation menu"
           >
@@ -91,7 +90,7 @@ export default function Navbar() {
         
         {/* Mobile nav menu */}
         {menuOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-start justify-end lg:hidden">
+          <div className="fixed top-0 left-0 w-full h-full  bg-opacity-50 bg-black rounded-2xl z-50 flex items-start justify-end lg:hidden">
             <div className="bg-white rounded-2xl shadow-2xl mt-20 mr-4 p-6 w-[85vw] max-w-sm flex flex-col gap-4 animate-slide-in">
               {/* Close icon */}
               <button

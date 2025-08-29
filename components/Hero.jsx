@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import Container from "./Common/Container";
 
 export default function Hero() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -46,11 +47,11 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[80vh] lg:min-h-[70vh] geometric-bg pt-20 pb-8 px-4 overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-[80vh] lg:min-h-[70vh] geometric-bg pt-20 pb-8 overflow-hidden">
 
-        
+
         {/* Main content */}
-        <div className="flex flex-col items-center z-10 relative">
+        <Container className="flex flex-col items-center z-10 relative">
           {/* Headline */}
           <h1 className="text-center font-bold text-4xl md:text-5xl flex flex-wrap justify-center leading-tight mb-4">
             <span className="text-primary mr-2 mb-2 md:mb-0">
@@ -79,7 +80,7 @@ export default function Hero() {
                 onFocus={() => setShowSuggestions(true)}
                 autoComplete="off"
               />
-              <button 
+              <button
                 className="bg-primary text-secondary font-bold px-6 py-3 text-base flex items-center gap-2 hover:bg-primary-hover transition-colors rounded-r-lg"
                 onClick={() => handleSearch(searchQuery)}
                 type="button"
@@ -136,11 +137,11 @@ export default function Hero() {
             3,000+ reviews
             <span className="ml-1 font-bold">Trustpilot</span>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Dashboard image below hero */}
       <div className="w-full flex justify-center -mt-32 z-20 relative">
-        <div className=" rounded-2xl  p-2 max-w-6xl w-full flex justify-center">
+        <Container className=" rounded-2xl  p-2 w-full flex justify-center">
           <Image
             src="/img/d1.png"
             alt="Dashboard Preview"
@@ -149,7 +150,7 @@ export default function Hero() {
             className="rounded-xl w-full h-auto object-contain"
             style={{ maxHeight: "600px" }}
           />
-        </div>
+        </Container>
       </div>
     </>
   );

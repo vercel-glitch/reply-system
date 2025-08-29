@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Container from "../Common/Container";
 
 export default function SolutionHero() {
   return (
     <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden mx-3">
-   
-      
-      <div className="max-w-6xl mx-auto relative z-10">
+      <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
@@ -14,19 +13,19 @@ export default function SolutionHero() {
             <p className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
               HELP DESK TICKETING SOFTWARE
             </p>
-            
+
             {/* Main title */}
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
-        AI-powered <span className="text-primary">ticketing system</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
+              AI-powered <span className="text-primary">ticketing system</span>
             </h1>
-            
+
             {/* Description */}
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
                 Zendesk Ticketing brings email, messaging, phone, social, and more into a single place. With AI automations and simple admin tools, our scalable ticketing tool cuts support costs and drives fast results. No expertise needed.
               </p>
             </div>
-            
+
             {/* Call to action button */}
             <div className="pt-4">
               <button className="inline-flex items-center gap-3 bg-primary text-secondary font-semibold px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200 shadow-lg">
@@ -37,7 +36,7 @@ export default function SolutionHero() {
               </button>
             </div>
           </div>
-          
+
           {/* Right side - Solution image */}
           <div className="relative">
             <div className="rounded-2xl p-1">
@@ -52,7 +51,7 @@ export default function SolutionHero() {
                 />
               </div>
             </div>
-            
+
             {/* Floating chat icon */}
             <div className="absolute -bottom-4 -right-4 bg-secondary text-white p-3 rounded-full shadow-lg">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -61,7 +60,7 @@ export default function SolutionHero() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

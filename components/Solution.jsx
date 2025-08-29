@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Container from './Common/Container'
 export default function Solution() {
   return (
     <section className="bg-white py-20 mt-24 px-4 flex flex-col items-center">
@@ -11,7 +11,7 @@ export default function Solution() {
         <span className="font-bold text-text-secondary">managed customer support partner.</span>
       </p>
       {/* Main content grid */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <Container className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left: Feature list */}
         <div className="flex flex-col gap-4">
           {[
@@ -87,7 +87,7 @@ export default function Solution() {
             <span className="font-bold">Your business is unique. Your support should be too.</span>
           </div>
         </div> */}
-      </div>
+      </Container>
     </section>
   );
 } 

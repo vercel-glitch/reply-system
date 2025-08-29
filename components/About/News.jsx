@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Container from "../Common/Container";
 
 export default function News() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 bg-white">
+      <Container>
         {/* News Banner */}
         <div className="bg-secondary rounded-2xl p-8 mb-16 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-white">
@@ -48,7 +49,7 @@ export default function News() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

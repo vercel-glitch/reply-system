@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from './Common/Container';
 
 const steps = [
   {
@@ -44,7 +45,7 @@ export default function HowItWork() {
       <h2 className="text-5xl font-bold text-center text-text-primary mb-2">How It work</h2>
       <p className="text-center text-secondary text-lg mb-14">We are fully support on Reply System</p>
       {/* Main content grid */}
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-start">
+      <Container className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-16 items-start">
         {/* Left: Steps */}
         <div className="flex flex-col gap-8 bg-primary p-6 rounded-[32px]">
           {steps.map((step, idx) => (
@@ -78,7 +79,7 @@ export default function HowItWork() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

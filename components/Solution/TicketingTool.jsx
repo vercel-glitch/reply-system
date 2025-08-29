@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Container from '../Common/Container'
 
 export default function TicketingTool() {
   const [selectedFeature, setSelectedFeature] = useState(3) // Start with the 4th feature expanded
@@ -33,7 +34,7 @@ export default function TicketingTool() {
 
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+      <Container>
         {/* Header Section */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
@@ -127,7 +128,7 @@ export default function TicketingTool() {
             No credit card required • Cancel anytime
           </p>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

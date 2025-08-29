@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Container from './Common/Container'
 export default function PricingTable() {
   const [billing, setBilling] = useState("monthly");
 
@@ -102,7 +102,7 @@ export default function PricingTable() {
 
   return (
     <section className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
+      <Container  className="w-full">
         {/* Toggle */}
         <div className="flex items-center justify-end gap-4 mb-8">
           <span className={`font-semibold ${billing === "monthly" ? "text-black" : "text-gray-400"}`}>Monthly</span>
@@ -171,7 +171,7 @@ export default function PricingTable() {
           <span>*Additional channels available are on Support Team as add-ons.</span>
           <span>**Additional fees apply.</span>
         </div>
-      </div>
+      </Container>
     </section>
   );
 } 

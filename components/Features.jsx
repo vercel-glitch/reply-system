@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from './Common/Container'
 
 const CheckIcon = () => (
           <span className="ml-auto flex items-center justify-center w-6 h-6 rounded-full bg-primary">
@@ -73,7 +74,7 @@ const cards = [
 export default function Features() {
   return (
     <section className="bg-white py-16 px-4 flex flex-col items-center">
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+      <Container className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {cards.map((card, idx) => (
           <div
             key={idx}
@@ -105,7 +106,7 @@ export default function Features() {
             </div>
           </div>
         ))}
-      </div>
+      </Container>
     </section>
   );
 } 
